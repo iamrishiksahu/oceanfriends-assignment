@@ -28,18 +28,6 @@
   pointer-events: none;
 }
 
-@media only screen and (max-width: 400px) {
-
-  .App{
-    align-items: flex-start;
-  }
-  .MainContainer{
-    min-width: 100vw;
-    height: 90vh;
-    aspect-ratio: unset;
-  }
-}
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

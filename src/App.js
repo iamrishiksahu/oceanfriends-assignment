@@ -6,6 +6,7 @@ import DarkTheme from './themes/DarkTheme';
 import { Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
 import CardDetails from './components/CardDetails';
+import Catalogue from './components/Catalogue';
 
 function App() {
   return (
@@ -17,9 +18,9 @@ function App() {
           <Routes>
             <Route path='/'>
               <Route index element={<Home/>} />
-              <Route path='catalogue' element={<h2>cat</h2>} />
+              <Route path='catalogue' element={<Catalogue/>} />
               <Route path='history' element={<h2>hist</h2>} />
-              <Route path='card' element={<CardDetails />} />
+              <Route path='card/:type' element={<CardDetails />} />
             </Route>
           </Routes>
 

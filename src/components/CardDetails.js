@@ -3,14 +3,27 @@ import CreditCard from './cards/CreditCard'
 import { Box, Stack, Typography } from '@mui/material'
 import styled from '@emotion/styled'
 import PageParent from './layouts/PageParent'
+import { useParams } from 'react-router-dom'
 
 const CardDetails = () => {
+
+    const { type } = useParams()
+
     return (
         <PageParent>
+
+            <i className="fi fi-rs-arrow-small-left" style={{
+                fontSize: '2rem',
+                margin: '0px',
+                marginBottom: '-1rem',
+                padding: '0px'
+            }}></i>
             <Typography variant='h1'>
                 Salary<br />Card
             </Typography>
             <CreditCard
+                orientation={'H'}
+                color={type}
                 number='5489 7452 8726 9827'
                 expiry={'04/24'}
                 issuer={'Universal Bank'}
