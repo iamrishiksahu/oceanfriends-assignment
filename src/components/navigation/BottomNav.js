@@ -22,7 +22,7 @@ const BottomNav = () => {
   return (
     <BottomNavigation sx={{
       width: '100%',
-      position: 'absolute',
+      position: 'sticky',
       bottom: 0,
       borderRadius: '1.25rem 1.25rem 0 0',
       background: 'linear-gradient(180deg, #303b5b, #1b2542)',

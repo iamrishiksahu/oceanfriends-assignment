@@ -7,6 +7,7 @@ import { Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
 import CardDetails from './components/CardDetails';
 import Catalogue from './components/Catalogue';
+import History from './components/History';
 
 function App() {
   return (
@@ -14,15 +15,17 @@ function App() {
       <Box className="App">
         <Box className="MainContainer">
           <TopBar />
+          <Box sx={{flex: '1'}}>
+            <Routes>
+              <Route path='/'>
+                <Route index element={<Home />} />
+                <Route path='catalogue' element={<Catalogue />} />
+                <Route path='history' element={<History />} />
+                <Route path='card/:type' element={<CardDetails />} />
+              </Route>
+            </Routes>
 
-          <Routes>
-            <Route path='/'>
-              <Route index element={<Home/>} />
-              <Route path='catalogue' element={<Catalogue/>} />
-              <Route path='history' element={<h2>hist</h2>} />
-              <Route path='card/:type' element={<CardDetails />} />
-            </Route>
-          </Routes>
+          </Box>
 
 
           <BottomNav />

@@ -4,7 +4,8 @@ import React from 'react'
 const TopBar = () => {
     return (
         <Stack direction={'row'} justifyContent={'space-between'} sx={{
-            padding: '0.25rem 1rem'
+            padding: '0.25rem 1rem',
+           
         }}>
             <Stack direction={'row'}>
 

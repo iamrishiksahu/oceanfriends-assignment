@@ -17,9 +17,10 @@
   width: 300px;
   max-width: 350px;
   background-color: white;
-  overflow: hidden;
   aspect-ratio: 9/19;
   position: relative;
+  display: flex;
+  flex-direction: column;
   background: linear-gradient(200deg, #303b5b, #1b2542);
 }
 

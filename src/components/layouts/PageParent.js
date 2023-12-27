@@ -7,6 +7,7 @@ const PageParent = styled(Box)({
     display: 'flex',
     flexDirection: 'column',
     gap: '1rem',
+    overflowY: 'auto'
 })
 
 export default PageParent

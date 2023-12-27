@@ -3,11 +3,6 @@ import React from 'react'
 
 const CreditCard = ({ cardName, issuer, number, expiry, color, sx, onClick, orientation }) => {
 
-    const verticalStyles = {
-
-    }
-
-
     return (
 
         <>
