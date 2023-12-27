@@ -2,21 +2,13 @@ import React from 'react'
 import CreditCard from './cards/CreditCard'
 import { Box, Stack, Typography } from '@mui/material'
 import styled from '@emotion/styled'
+import PageParent from './layouts/PageParent'
 
 const CardDetails = () => {
     return (
-        <Box sx={{
-            padding: '1rem',
-            display: 'flex',
-            flexDirection: 'column',
-            gap: '1rem',
-        }}>
-
-            <Typography sx={{
-                fontWeight: 800,
-                fontSize: '1.5rem'
-            }}>
-                Salary<br/>Card
+        <PageParent>
+            <Typography variant='h1'>
+                Salary<br />Card
             </Typography>
             <CreditCard
                 number='5489 7452 8726 9827'
@@ -27,14 +19,8 @@ const CardDetails = () => {
 
             <Stack mt={'1rem'} direction={'row'} justifyContent={'space-between'} alignItems={'center'}>
                 <Stack>
-                    <Typography sx={{
-                        fontWeight: 700,
-                        color: '#ffffff90'
-                    }}>Balance</Typography>
-                    <Typography sx={{
-                        fontWeight: '600',
-                        fontSize: '1.25rem'
-                    }}>$2,748.00</Typography>
+                    <Typography variant='h3'>Balance</Typography>
+                    <Typography variant='h2'>$2,748.00</Typography>
                 </Stack>
 
                 <Stack direction={'row'} spacing={'0.5rem'}>
@@ -46,7 +32,7 @@ const CardDetails = () => {
                     </ActionIcons>
                 </Stack>
             </Stack >
-        </Box >
+        </PageParent>
     )
 }
 

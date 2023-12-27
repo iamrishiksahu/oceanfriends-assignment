@@ -7,6 +7,7 @@
   padding: 0;
   
 }
+
 .MainContainer::-webkit-scrollbar{
   display: none;
 }
@@ -25,6 +26,18 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+@media only screen and (max-width: 400px) {
+
+  .App{
+    align-items: flex-start;
+  }
+  .MainContainer{
+    min-width: 100vw;
+    height: 90vh;
+    aspect-ratio: unset;
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {

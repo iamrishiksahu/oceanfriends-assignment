@@ -12,9 +12,6 @@ const CreditCard = ({ cardName, issuer, number, expiry, color }) => {
             background: 'rgb(233,130,240)',
             background: color == 'orange'? 'rgb(255,137,98)' : 'rgb(255,98,241)',
             background: color == 'orange'? 'linear-gradient(61deg, rgba(255,137,98,1) 20%, rgba(255,5,5,1) 52%, rgba(255,192,0,1) 100%)':  'linear-gradient(61deg, rgba(255,98,241,1) 20%, rgba(5,186,255,1) 52%, rgba(0,91,255,1) 100%)',
-
-
-
         }}>
 
             <Stack sx={{
