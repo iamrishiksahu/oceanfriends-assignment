@@ -1,5 +1,25 @@
 .App {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  
+}
+.MainContainer::-webkit-scrollbar{
+  display: none;
+}
+
+.MainContainer {
+  overflow-y: auto;
+  width: 300px;
+  max-width: 350px;
+  background-color: white;
+  overflow: hidden;
+  aspect-ratio: 9/19;
+  position: relative;
+  background: linear-gradient(200deg, #303b5b, #1b2542);
 }
 
 .App-logo {
@@ -32,6 +52,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
