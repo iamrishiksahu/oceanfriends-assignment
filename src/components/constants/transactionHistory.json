@@ -1,0 +1,184 @@
+[
+    {
+        "icon": "",
+        "name": "Uber",
+        "desc": "Ride Payment",
+        "amount": "$10.00",
+        "type": "D",
+        "card": "9827",
+        "date": "2023-12-25T00:00:00.000Z"
+    },
+    {
+        "icon": "",
+        "name": "Apple Music",
+        "desc": "Subscription Renewal",
+        "amount": "$20.00",
+        "type": "D",
+        "card": "9827",
+        "date": "2023-12-25T00:00:00.000Z"
+    },
+    {
+        "icon": "",
+        "name": "Grocery",
+        "desc": "Weekly Shopping",
+        "amount": "$15.00",
+        "type": "D",
+        "card": "9827",
+        "date": "2023-12-25T00:00:00.000Z"
+    },
+    {
+        "icon": "",
+        "name": "Subscription",
+        "desc": "Online Service",
+        "amount": "$12.50",
+        "type": "D",
+        "card": "9827",
+        "date": "2023-12-25T00:00:00.000Z"
+    },
+    {
+        "icon": "",
+        "name": "Grocery",
+        "desc": "Fresh Produce",
+        "amount": "$8.75",
+        "type": "D",
+        "card": "9827",
+        "date": "2023-12-25T00:00:00.000Z"
+    },
+    {
+        "icon": "",
+        "name": "Apple Music",
+        "desc": "Subscription Charge",
+        "amount": "$30.00",
+        "type": "D",
+        "card": "9827",
+        "date": "2023-12-25T00:00:00.000Z"
+    },
+    {
+        "icon": "",
+        "name": "Uber",
+        "desc": "Morning Commute",
+        "amount": "$5.00",
+        "type": "D",
+        "card": "9827",
+        "date": "2023-12-26T00:00:00.000Z"
+    },
+    {
+        "icon": "",
+        "name": "Subscription",
+        "desc": "Monthly Fee",
+        "amount": "$25.00",
+        "type": "D",
+        "card": "9827",
+        "date": "2023-12-26T00:00:00.000Z"
+    },
+    {
+        "icon": "",
+        "name": "Grocery",
+        "desc": "Essentials",
+        "amount": "$18.50",
+        "type": "D",
+        "card": "9827",
+        "date": "2023-12-26T00:00:00.000Z"
+    },
+    {
+        "icon": "",
+        "name": "Apple Music",
+        "desc": "Music Subscription",
+        "amount": "$22.00",
+        "type": "D",
+        "card": "9827",
+        "date": "2023-12-26T00:00:00.000Z"
+    },
+    {
+        "icon": "",
+        "name": "Grocery",
+        "desc": "Snacks and Drinks",
+        "amount": "$7.50",
+        "type": "D",
+        "card": "9827",
+        "date": "2023-12-26T00:00:00.000Z"
+    },
+    {
+        "icon": "",
+        "name": "Subscription",
+        "desc": "Digital Service",
+        "amount": "$40.00",
+        "type": "D",
+        "card": "9827",
+        "date": "2023-12-24T00:00:00.000Z"
+    },
+    {
+        "icon": "",
+        "name": "Uber",
+        "desc": "Night Out",
+        "amount": "$14.50",
+        "type": "D",
+        "card": "9827",
+        "date": "2023-12-24T00:00:00.000Z"
+    },
+    {
+        "icon": "",
+        "name": "Apple Music",
+        "desc": "Subscription Fee",
+        "amount": "$11.25",
+        "type": "D",
+        "card": "9827",
+        "date": "2023-12-24T00:00:00.000Z"
+    },
+    {
+        "icon": "",
+        "name": "Grocery",
+        "desc": "Weekend Shopping",
+        "amount": "$9.00",
+        "type": "D",
+        "card": "9827",
+        "date": "2023-12-24T00:00:00.000Z"
+    },
+    {
+        "icon": "",
+        "name": "Income",
+        "desc": "Freelance Work",
+        "amount": "$50.00",
+        "type": "C",
+        "card": "9827",
+        "date": "2023-12-27T09:48:52.311Z"
+    },
+    {
+        "icon": "",
+        "name": "Expense",
+        "desc": "Dinner Out",
+        "amount": "$16.75",
+        "type": "D",
+        "card": "9827",
+        "date": "2023-12-27T09:48:52.311Z"
+    },
+    {
+        "icon": "",
+        "name": "Income",
+        "desc": "Consulting Fee",
+        "amount": "$27.50",
+        "type": "C",
+        "card": "9827",
+        "date": "2023-12-27T09:48:52.311Z"
+    },
+    {
+        "icon": "",
+        "name": "Expense",
+        "desc": "Lunch Out",
+        "amount": "$13.50",
+        "type": "D",
+        "card": "9827",
+        "date": "2023-12-27T09:48:52.311Z"
+    },
+    {
+        "icon": "",
+        "name": "Income",
+        "desc": "Project Payment",
+        "amount": "$35.00",
+        "type": "C",
+        "card": "9827",
+        "date": "2023-12-27T09:48:52.311Z"
+    }
+
+
+]

@@ -2,86 +2,12 @@ import React, { useState } from 'react'
 import PageParent from './layouts/PageParent'
 import { Stack, Typography, Avatar, Button, Box, Icon } from '@mui/material'
 import styled from '@emotion/styled'
+import catalogueData from './constants/catalogueData.json'
 
 const Catalogue = () => {
 
-    const [data, setData] = useState([
-        {
-            icon: '',
-            title: 'Mobile',
-            currency_symbol: '$',
-            amuont: 34.00,
-            tp_pay: true,
-        },
-        {
-            icon: '',
-            title: 'Internet and TV',
-            currency_symbol: '$',
-            amuont: 21.00,
-            tp_pay: true,
-        },
-        {
-            icon: '',
-            title: 'Traffic fines',
-            currency_symbol: '$',
-            amuont: 1221.00,
-            tp_pay: true,
-        },   {
-            icon: '',
-            title: 'Mobile',
-            currency_symbol: '$',
-            amuont: 34.00,
-            tp_pay: true,
-        },
-        {
-            icon: '',
-            title: 'Internet and TV',
-            currency_symbol: '$',
-            amuont: 21.00,
-            tp_pay: true,
-        },
-        {
-            icon: '',
-            title: 'Traffic fines',
-            currency_symbol: '$',
-            amuont: 1221.00,
-            tp_pay: true,
-        },   {
-            icon: '',
-            title: 'Mobile',
-            currency_symbol: '$',
-            amuont: 34.00,
-            tp_pay: true,
-        },
-        {
-            icon: '',
-            title: 'Internet and TV',
-            currency_symbol: '$',
-            amuont: 21.00,
-            tp_pay: true,
-        },
-        {
-            icon: '',
-            title: 'Traffic fines',
-            currency_symbol: '$',
-            amuont: 1221.00,
-            tp_pay: true,
-        },
-        {
-            icon: '',
-            title: 'Housing Services',
-            currency_symbol: '$',
-            amuont: 0.00,
-            tp_pay: true,
-        },
-        {
-            icon: '',
-            title: 'Utility Payment',
-            currency_symbol: '$',
-            amuont: 442.00,
-            tp_pay: true,
-        },
-    ])
+    const [data, setData] = useState(catalogueData)
+
     return (
         <PageParent>
 
@@ -94,18 +20,20 @@ const Catalogue = () => {
 
             {data.map((item, idx) => {
                 return (
-                    <Stack key={idx} spacing={'1rem'} direction={'row'}>
+                    <Stack key={idx}
+                        sx={{
+                            flexDirection: 'row',
+                            gap: '1rem',
+                            cursor: 'pointer',
+                            alignItems: 'center'
+                        }}
+                    >
                         <Box sx={{
                             background: 'linear-gradient(180deg, #67a9ff, #5049ff)',
-                            padding: '0.5rem',
-                            position: 'relative',
-                            width: '24px',
-                            height: '24px',
-                            // aspectRatio: '1/1',
-                            // display: 'flex',
-                            // alignItems: 'center',
-                            // justifyContent: 'center',
-                            borderRadius: '10rem',
+                            width: '3rem',
+                            aspectRatio: '1/1',
+                            borderRadius: '4rem',
+                            position: 'relative'
 
                         }}>
                             <i className={item.icon == '' ? 'fi fi-rr-receipt' : item.icon}
@@ -119,8 +47,8 @@ const Catalogue = () => {
                         </Box>
 
                         <Stack direction={'row'} justifyContent={'space-between'} width={'100%'} sx={{
-                            borderBottom: '1.5px solid #ffffff10',
-                            paddingBottom: '.5rem'
+                            borderBottom: '1.5px solid #00000020',
+                            paddingBottom: '.25rem'
                         }}>
 
                             <Stack>
@@ -147,5 +75,7 @@ const PayButton = styled(Button)({
     border: '1px solid #7a91d2',
     color: '#7a91d2',
     borderRadius: '.75rem',
+    padding: '0.25rem 0.5rem',
+    height: 'max-content'
 
 })

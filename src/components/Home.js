@@ -19,7 +19,7 @@ const Home = () => {
     }
     return (
         <PageParent>
-            <Stack direction={'row'} justifyContent={'space-between'} mt={'2rem'}>
+            <Stack direction={'row'} justifyContent={'space-between'} mt={'2rem'} mb={'1rem'}>
                 <Stack sx={{ gap: '0.25rem' }}>
                     <Typography variant='h1'>Bank<br />Cards</Typography>
                     <Typography variant='h3'>Balance</Typography>
@@ -35,7 +35,6 @@ const Home = () => {
                 display: 'grid',
                 gridTemplateColumns: '1fr 1fr',
                 overflowX: 'auto',
-                // height: '380px',
                 gap: '1rem',
                 scrollSnapType: 'x mandatory', 
                 '& > *': {

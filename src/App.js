@@ -15,7 +15,7 @@ function App() {
       <Box className="App">
         <Box className="MainContainer">
           <TopBar />
-          <Box sx={{flex: '1'}}>
+          <Box sx={{ flex: '1' }}>
             <Routes>
               <Route path='/'>
                 <Route index element={<Home />} />

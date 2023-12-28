@@ -23,7 +23,7 @@ const BottomNav = () => {
     <BottomNavigation sx={{
       width: '100%',
       position: 'sticky',
-      bottom: 0,
+      bottom: '-1px',
       borderRadius: '1.25rem 1.25rem 0 0',
       background: 'linear-gradient(180deg, #303b5b, #1b2542)',
       boxShadow: '-10px 0 2rem #00000040'
@@ -58,8 +58,8 @@ const BotNavAction = styled(BottomNavigationAction)({
   "&.Mui-selected i": {
     background: 'linear-gradient(0deg, #7557fd, #6195ff)',
     borderRadius: '50%',
-    width: '2.75rem',
-    height: '2.75rem',
+    width: '2.5rem',
+    height: '2.5rem',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',

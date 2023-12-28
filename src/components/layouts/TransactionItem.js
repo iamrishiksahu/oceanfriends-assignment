@@ -1,29 +1,39 @@
 import React, { useState } from 'react'
-import { Box, Typography, Stack } from '@mui/material'
+import { Box, Typography, Stack, Paper } from '@mui/material'
 import { format } from 'date-fns'
+import { useNavigate } from 'react-router-dom'
 
-const TransactionItem = ({item}) => {
+const TransactionItem = ({ item, source }) => {
     const [show, setShow] = useState(false)
+    const navigate = useNavigate()
+
+    const handleItemClick = () => {
+        if (source == 'card-component') {
+            setShow(prev => !prev)
+        } else {
+            navigate('/card/blue')
+        }
+    }
     return (
-        <Stack spacing={'1rem'} direction={'row'}
-            mt={'.5rem'}
-            onClick={() => setShow(prev => !prev)}
-            >
+        <Stack
+            onClick={handleItemClick}
+            sx={{
+                flexDirection: 'row',
+                gap: '1rem',
+                marginTop: '0.5rem',
+                cursor: 'pointer',
+                alignItems: 'center'
+            }}
+        >
             <Box sx={{
                 background: 'linear-gradient(180deg, #67a9ff, #5049ff)',
-                padding: '0.5rem',
-                position: 'relative',
-                width: '24px',
-                height: '24px',
-                transition: 'all 200 ease-in-out',
-                // aspectRatio: '1/1',
-                // display: 'flex',
-                // alignItems: 'center',
-                // justifyContent: 'center',
-                borderRadius: '10rem',
+                width: '3rem',
+                aspectRatio: '1/1',
+                borderRadius: '4rem',
+                position: 'relative'
 
             }}>
-                <i className={item.icon == '' ? 'fi fi-rr-receipt' : item.icon}
+                <i className={item?.icon == '' ? 'fi fi-rr-receipt' : item?.icon}
                     style={{
                         position: 'absolute',
                         top: '50%',
@@ -34,7 +44,7 @@ const TransactionItem = ({item}) => {
             </Box>
 
             <Stack direction={'row'} width={'100%'} sx={{
-                borderBottom: '1.5px solid #ffffff10',
+                borderBottom: '1.5px solid #00000020',
                 paddingBottom: '0.5rem',
                 justifyContent: 'space-between',
                 alignItems: 'center'
@@ -45,13 +55,13 @@ const TransactionItem = ({item}) => {
                     <Typography >{item.name}</Typography>
                     <Typography color={'#94a3d3'} fontSize={'0.75rem'}>{item.desc}</Typography>
 
-                    {show?
+                    {show ?
                         <>
                             <Typography fontSize={'0.75rem'}>xxxx-xxxx-xxx-{item.card}</Typography>
 
                             <Typography fontSize={'0.75rem'}>{format(item.date, 'dd-MM-yyyy')}</Typography>
                         </>
-                        :<></>
+                        : <></>
                     }
 
                 </Stack>

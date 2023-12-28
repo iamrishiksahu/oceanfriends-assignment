@@ -4,6 +4,7 @@ import { Box, Stack, Typography } from '@mui/material'
 import styled from '@emotion/styled'
 import PageParent from './layouts/PageParent'
 import { useNavigate, useParams } from 'react-router-dom'
+import PullableHistory from './layouts/PullableHistory'
 
 const CardDetails = () => {
 
@@ -11,7 +12,10 @@ const CardDetails = () => {
     const navigate = useNavigate()
 
     return (
-        <PageParent>
+        <PageParent sx={{
+            position: 'relative',
+            height: '100%',
+        }}>
 
             <i className="fi fi-rs-arrow-small-left" style={{
                 fontSize: '2rem',
@@ -49,6 +53,8 @@ const CardDetails = () => {
                     </ActionIcons>
                 </Stack>
             </Stack >
+
+            <PullableHistory />
         </PageParent>
     )
 }
